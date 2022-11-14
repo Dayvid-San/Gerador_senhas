@@ -9,17 +9,18 @@
 </head>
 <body>
     <main class="center-main">
-        <section onsubmit="toRender()">
-            <div >
+        <section >
+            <div onsubmit='toRender()'>
                 <label for="numberChar">Quantos caracters?</label>
                 <input type="text" name="numberChar" value="" id="numberChar">
-                <button onclick="toRender()">Criar</button>
+                <button onclick="toRender()">Gerar</button>
+                <button id="copy">Copiar</button>
             </div>
             <fieldset id="password">
                 <legend>Sua senha: </legend>
                 <p name="result" id="result"></p>
             </fieldset>
-        </section action="">
+        </section>
     </main>
     <script src="index.js"></script>
 </body>
