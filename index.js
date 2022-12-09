@@ -1,5 +1,8 @@
 let output = document.querySelector('#result')
-let copyBTN = document.querySelector('#copy').addEventListener('click', copy)
+let copyBTN = document.querySelector('#copy').addEventListener('click', () => {
+    copy()
+    alert("Copiado!")
+})
 let inputNumberChar = document.getElementById("numberChar");
 
 
@@ -15,12 +18,13 @@ const random = (length = 8) => {
 
 };
 
+
 function toRender () {
     output.innerText = random(inputNumberChar.value)
+    copy()
 }
+
 function copy () {
     const copyText = output.innerHTML
-    navigator.clipboard.writeText(copyText).then(() => {
-        alert('Texto copiado!')
-    })
+    navigator.clipboard.writeText(copyText)
 }

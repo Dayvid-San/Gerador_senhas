@@ -12,3 +12,20 @@
 #password{
     height: 70px;
 }
+footer{
+    position: fixed;
+    top: 90%;
+    left: 0;
+
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+    height: 200px;
+
+    text-align: center;
+}
+#repositorio-github{
+    color: #ffffff;
+}
+#repositorio-github:hover{
+    color: rgb(68, 68, 223);
+}
